@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Mean Machine</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/Untitled-2-01.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="About.html">ABOUT</a></li>
+                        <li><a href="News.html">NEWS & FIXTURES</a></li>
+                        <li><a href="Gallery.html">GALLERY</a></li>
+                        <li><a href="Contact.html
+                            ">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Kenya's Best University Rugby Club.</h1>
+                <p>Moulding extravagant players on and off the pitch.</p>
+            </div>
+
+        </section>
+
+
+        <!------- course ------>
+        <section class="course">
+            <h2>About Us</h2>
+            <p>Mean Machine RFC is the official rugby team of the University of Nairobi, dedicated to <br>
+                <br>
+                <br>
+                <br> excellence and nurturing rugby talent in Kenya.</p>
+        
+            <div class="row">
+                <div class="course-col">
+                    <a href="About.html" class="hero-btn">Read More</a>
+                </div>
+                
+            </div>
+        
+        </section>
+
+        <section class="Standards">
+            <h2>Our Goals and Values.</h2>
+            <p>What we stand for as a club.</p>
+        
+            <div class="row">
+                <div class="Standards-col">
+                    <img src="Images/photo_2024-09-17_10-53-00.jpg">
+                    <div class="layer">
+                        <h3>VALUES</h3>
+                        <p>Our core values are Hardwork,<br>
+                            <br>
+                            <br>
+                             Honesty and Discipline</p>
+                    </div>
+                </div>
+                <div class="Standards-col">
+                    <img src="Images/photo_2024-09-17_10-52-54.jpg">
+                    <div class="layer">
+                        <h3>VISSION</h3>
+                    </div>
+                </div>
+                <div class="Standards-col">
+                    <img src="Images/photo_2024-09-17_10-52-56.jpg">
+                    <div class="layer">
+                        <h3>MISSION</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop">
+            <h2>Mean Machine Store.</h2>
+            <p>You can support the club by visiting our store,<br> 
+                 <br>
+                 <br>
+                  <br> getting yourself team merchandise.</p>
+        
+            <div class="row">
+                <div class="shop-col">
+                    <img src="Images/IMG-20250206-WA0003.jpg">
+                    <h3>Jumper White</h3>
+                </div>
+                <div class="shop-col">
+                    <img src="Images/IMG-20250206-WA0001.jpg">
+                    <h3>Jumper Black</h3>
+                </div>
+                <div class="shop-col">
+                    <img src="Images/IMG-20250206-WA0004.jpg">
+                    <h3>Water bottle</h3>
+                </div>
+            </div>
+        
+        
+        </section>
+
+        <section class="gallery">
+            <h2>Get a glimpse into the team.</h2>
+            <div class="wrapper">
+                <button class="nav-button prev" onclick="scrollLeft()">❮</button>
+                <div class="carousel">
+                    <img src="Images/_MG_2868.JPG" alt="img">
+                    <img src="Images/_MG_2854.JPG" alt="img">
+                    <img src="Images/_MG_2861.JPG" alt="img">
+                    <img src="Images/_MG_2862.JPG" alt="img">
+                    <img src="Images/_MG_2939.JPG" alt="img">
+                    <img src="Images/_MG_2836.JPG" alt="img">
+                    <img src="Images/_MG_2834.JPG" alt="img">
+                    <img src="Images/_MG_2835.JPG" alt="img">
+                    <img src="Images/IMG-20250206-WA0010.jpg" alt="img">
+                    <img src="Images/photo_2024-09-17_10-47-49.jpg" alt="img">
+                    <img src="Images/photo_2024-09-17_10-52-55.jpg" alt="img">
+                </div>
+                <button class="nav-button next" onclick="scrollRight()">❯</button>
+                <div class="row">
+                    <div class="gallery-col">
+                        <a href="Gallery.html" class="hero-btn">See More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cta">
+            <h4>Be part of the Eschuma family.</h4>
+            <a href="Contact.html" class="hero-btn">CONTACT US</a>
+        </section>
+
+        <section class="footer">
+            <h4></h4>
+            <p></p>
+            
+            <div class="icons">
+                <a href="https://facebook.com/yourpage" target="_blank">
+                    <i class="fa-brands fa-square-facebook"></i>
+                </a>
+                <a href="https://twitter.com/meanmachinerc1" target="_blank">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </a>
+                <a href="https://instagram.com/meanmachinerfc1" target="_blank">
+                    <i class="fa-brands fa-square-instagram"></i>
+                </a>
+            </div>
+        </section>
+
+        <script>
+            const carousel = document.querySelector('.carousel');
+            let autoScrollTimer;
+        
+            const scrollAmount = carousel.clientWidth; // Scroll by one full image width
+            const scrollInterval = 3000; // 3 seconds
+        
+            function autoScroll() {
+                if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
+                    carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    carousel.scrollBy({ left: 744, behavior: 'smooth' });
+                }
+            }
+        
+            function startAutoScroll() {
+                autoScrollTimer = setInterval(autoScroll, scrollInterval);
+            }
+        
+            function stopAutoScroll() {
+                clearInterval(autoScrollTimer);
+            }
+        
+            function resetAutoScroll() {
+                stopAutoScroll();
+                setTimeout(startAutoScroll, 3000); // Restart auto-scroll after 5 seconds
+            }
+        
+            function scrollLeft() {
+                carousel.scrollBy({ left: -744, behavior: 'smooth' });
+                resetAutoScroll();
+            }
+        
+            function scrollRight() {
+                carousel.scrollBy({ left: 744, behavior: 'smooth' });
+                resetAutoScroll();
+            }
+        
+            // Start auto-scroll on page load
+            startAutoScroll();
+        </script>
+        
+
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+        
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+        
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>

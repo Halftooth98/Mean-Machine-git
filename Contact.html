@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Mean Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/Untitled-2-01.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="News.html">NEWS & FIXTURES</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us.</h1>
+    </section>
+
+    <section class="location">
+       
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.828718497264!2d36.8108669!3d-1.2761457999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f172529a3608f%3A0x37ed6c1172e7a304!2sUoN%20Rugby%20Pitch!5e0!3m2!1sen!2ske!4v1740558659416!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+    </section>
+
+    <section class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+                 <div>
+                    <i class="fa-solid fa-house"></i>
+                    <span>
+                        <h5>University of Nairobi</h5>
+                        <br>
+                        <br>
+                        <p>PRF6+G8X, Prof Mourice Alala Road, Nairobi</p>
+                    </span>
+                 </div>
+                 <div>
+                    <a href="tel:0204913051" class="icon-link">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <span>
+                        <h5> 020 4913051</h5>
+                        <br>
+                        <br>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                 </div>
+                 <div>
+                    <a href="mailto:Eschumabsolute1977@gmail.com" class="icon-link">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <span>
+                        <h5>Eschumabsolute1977@gmail.com</h5>
+                    </span>
+                 </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="Message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn">Send Message</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="footer">
+        <h4></h4>
+        <p></p>
+
+        <div class="icons">
+            <a href="https://facebook.com/yourpage">
+                <i class="fa-brands fa-square-facebook"></i> 
+            </a>
+            <a href="https://twitter.com/meanmachinerc1">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/meanmachinerfc1">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

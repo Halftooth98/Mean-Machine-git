@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Mean Machine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/Untitled-2-01.png"></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="News.html">NEWS & FIXTURES</a></li>
+                    <li><a href="Gallery.html">GALLERY</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>News & Fixtures.</h1>
+    </section>
+
+    <section class="news">
+       
+        <div class="row">
+            <div class="Standards-col">
+                <img src="Images/images (2).jpeg">
+                <div class="layer">
+                    <h3>MoB plan for the future of Eschuma</h3>
+                </div>
+            </div>
+            <div class="Standards-col">
+                <img src="Images/photo_2025-02-13_15-37-00.jpg">
+                <div class="layer">
+                    <h3>Recap of the National 7s circuit</h3>
+                </div>
+            </div>
+            <div class="Standards-col">
+                <img src="Images/photo_2025-02-13_15-36-17.jpg">
+                <div class="layer">
+                    <h3>Mean Machine road to Kenya Cup</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <section class="footer">
+        <h4></h4>
+        <p></p>
+
+        <div class="icons">
+            <a href="https://facebook.com/yourpage">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="https://twitter.com/meanmachinerc1">
+                <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/meanmachinerfc1">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
